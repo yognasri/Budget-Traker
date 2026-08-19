@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.headerBar {
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.title {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.topbar {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.currency, .balance {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Content Area */
+.content {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.secondTitle {
+    margin: 0 0 20px 0;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.form {
+    margin-bottom: 20px;
+}
+
+.formLine {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.formLine span {
+    margin-right: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.formLine input, .formLine select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.formLine input:focus, .formLine select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.buttonSave {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.buttonSave:hover {
+    background-color: #45a049;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table .buttonDelete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.table .buttonDelete:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .formLine {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .formLine span, .formLine input, .formLine select {
+        width: 100%;
+    }
+
+    .formLine span {
+        margin-bottom: 5px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+    }
+}
